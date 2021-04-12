@@ -1,0 +1,247 @@
+.admin-panel
+{
+    padding-top:220px;
+}
+.hidden{
+    display:none;
+}
+.table-header{
+    background-color: #ff9ef8;
+}
+.table-header td{
+    border: 2px ridge #ddd;
+}
+.first-raw{
+    background-color: #ffd6fe;
+}
+.second-raw{
+    background-color: #dfd4ff;
+}
+.editpole{
+    display:none;
+}
+
+.editpole[attr=edit]{
+    display:table-cell;
+}
+table{
+    border-collapse: collapse;
+}
+table td{
+    padding:2px;
+}
+#adminSchedule{
+    width:100%;
+}
+#adminSchedule td{
+    min-width:70px;
+    text-align:center;
+    border:1px solid black;
+}
+
+#adminSchedule td[attr=name]{
+    text-align:left;
+    width:200px;
+}
+#adminSchedule td[attr=name] input{
+    width:194px;
+    margin:0px;
+}
+#adminSchedule td[attr=month]{
+    width:100px;
+    margin:0px;
+}
+#adminSchedule td[attr=places] input{
+    width:60px;
+    margin:0px;
+}
+
+.adminSchedulePersons{
+    display:none;
+}
+.adminSchedulePersons table{
+    border-collapse: collapse;
+    width:100%;
+}
+#adminSchedule .adminSchedulePersons table td{
+    width:125px;
+    text-align:center;
+    border:1px solid black;
+}
+#adminSchedule .adminSchedulePersons td[attr=name] input{
+    width:120px;
+    margin:0px;
+}
+#adminSchedule .adminSchedulePersons td[attr=notice] {
+    width:185px;
+    margin:0px;
+}
+
+
+
+
+
+
+/*Стили Пользователей*/
+.tabs {
+            min-width: 320px;
+            padding: 0px;
+            margin: 0 auto;
+        }
+        
+        .tabs > section {
+            display: none;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        
+        .tabs > section > p {
+            margin: 0 0 5px;
+            line-height: 1.5;
+            color: #383838;
+            
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+        }
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        /* Прячем чекбоксы */
+        
+        .tabs > input {
+            display: none;
+            position: absolute;
+        }
+        /* Стили переключателей вкладок (табов) */
+        
+        .tabs > label {
+            display: inline-block;
+            margin: 0 0 -1px;
+            padding: 15px 25px;
+            font-weight: 600;
+            text-align: center;
+            color: #aaa;
+            border: 0px solid #ddd;
+            border-width: 1px 1px 1px 1px;
+            background: #ffe4f8;
+            border-radius: 3px 3px 0 0;
+        }
+        
+        
+        
+        /* Изменения стиля переключателей вкладок при наведении */
+        
+        .tabs > label:hover {
+            color: #888;
+            cursor: pointer;
+        }
+        /* Стили для активной вкладки */
+        
+        .tabs > input:checked + label {
+            color: #555;
+            border-top: 1px solid #009933;
+            border-bottom: 1px solid #fff;
+            background: #fff;
+        }
+        /* Активация секций с помощью псевдокласса :checked */
+        
+        #tab1:checked ~ #addschedule,
+        #tab2:checked ~ #addperson{
+            display: block;
+        }
+        
+        
+        
+        /*Все пользователи*/
+.SchedulePersons{
+}
+.SchedulePersons table{
+    border-collapse: collapse;
+    width:100%;
+}
+#adminSchedule .SchedulePersons table td{
+    width:125px;
+    text-align:center;
+    border:1px solid black;
+}
+#adminSchedule .SchedulePersons td[attr=name] input{
+    width:120px;
+    margin:0px;
+}
+#adminSchedule .SchedulePersons td[attr=notice] {
+    width:185px;
+    margin:0px;
+}
+#adminSchedule .SchedulePersons .Person-num {
+    min-width:0px;
+    width:30px;
+    margin:0px;
+}
+
+
+/*Галерея*/
+.header-images{
+    background-color: #dc878c;
+    padding:0px 20px;
+    margin-bottom:20px; 
+}
+.header-images a{
+    color:black;
+}
+
+.admin-galery-img{
+    display: inline-block;
+    position: relative;
+}
+#delimg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30pt;
+    color:white;
+    cursor:pointer;
+}
+
+/*Ученицы*/
+#girls tr:nth-child(2n){
+    background-color: #ffd1d1;
+}
+#girls tr:nth-child(2n+1){
+    background-color: #ffe3e3;
+}
+.admin-img-krest{
+    display: inline-block;
+    position: relative;
+}
+.delmask{
+    position: absolute;
+    background-color: #959595ad;
+    width: 100%;
+    top: 0;
+}
+
+/*Отзывы*/
+.comment-admin{
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 10px 0px;
+}

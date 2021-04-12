@@ -1,0 +1,1011 @@
+@font-face {
+font-family: 'Vollkorn Regular';
+src: url('/fonts/vollkorn/Vollkorn-Regular.eot');
+src: url('/fonts/vollkorn/Vollkorn-Regular.eot?#iefix') format('embedded-opentype'),
+url('/fonts/vollkorn/Vollkorn-Regular.woff') format('woff'),
+url('/fonts/vollkorn/Vollkorn-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+body{
+    width:1200px;
+    margin: auto;
+    box-shadow: 0px 5px 20px rgb(255, 121, 215);
+    font-size: 16pt;
+    font-family: Vollkorn Regular, garamond, tahoma, arial, verdana;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+a:hover{
+    color:black;
+    text-decoration: none;
+}
+h1{
+    margin: 5px;
+    font-weight: bold;
+}
+.center{
+    text-align: center;
+}
+.site{
+
+}
+.header-area{
+width:1100px;
+padding: 15px 50px;
+height:190px;
+background-color: #dc878c;
+top:0;
+z-index: 500;
+position:fixed;
+}
+.header-top-block{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+}
+.header-top{
+    vertical-align: middle;
+    height: 85px;
+    padding-top: 15px;
+    
+}
+.header-menu{
+    padding:0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-menu a{
+color: white;
+text-align: center;
+display: inline-block;
+}
+.header-menu a:hover{
+    color: #ffdafc;    
+}
+.header-menu li{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 19pt;
+    padding: 0 5px;
+}
+.main-top-adress{    
+    padding: 15px 0px;
+}
+.main-top-adress a{
+    color:white;
+}
+.main-top-adress a:hover{
+    text-decoration: underline;
+}
+.main-top-contact{
+    float:right;
+}
+.main-top-contact div{
+ color:white;
+ padding-bottom: 10px;
+}
+.main-top-contact i{
+color:white;
+}
+
+.pink{
+    background-color: #dc878c;
+    padding: 10px 50px;
+    margin: 10px 0px;
+}
+.pink2{
+    background: url('/images/fon2.png');
+    padding: 10px 30px;
+    margin: 10px 0px;
+}
+.white{
+    background-color: white;
+    padding: 10px 50px;
+    margin: 10px 0px;
+}
+.links{
+    margin-top: -100px;
+    position: absolute;
+}
+.links[name=main]{
+    margin-top: -240px;
+    position: absolute;
+}
+.main-top{
+   /* background-image: url('/images/head.png');
+    background-repeat: no-repeat;
+    background-position: right;*/
+    min-height: 350px;
+    margin-top: 220px;
+}
+.main-top-name{
+    float:left;
+}
+
+.main-top-header:after, .about-main:after, .about-teachers:after, .plus-main:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+.main-top-name span{
+    font-size: 22pt;
+    font-weight: bold;
+}
+.pink-color{
+    color:#ea59da;
+}
+.main-top-content{
+    padding: 50px 0px 0px 80px;
+    width: 45%;
+    text-align: center;
+}
+.main-top-content h1{
+    padding-bottom: 15px;
+    font-size:25pt;
+}
+.main-top-content span{
+color:#c2334b;
+font-size: 17pt;
+}
+.main-top-content .main-top-promo{
+    margin-top: 10px;
+}
+.main-top-content .main-top-promo span{
+    font-weight: bold;
+    color:#c2334b;
+}
+.main-head2{
+position: absolute;
+margin-top: -380px;
+margin-left: 700px;
+z-index:501;
+}
+#createRequest{
+    padding-top: 50px;
+}
+#createRequest .forms{
+    border: 2px solid;
+    height: 30px;
+    width: 150px;
+    display: inline-block;
+    padding: 0px;
+}
+#createRequest input{   
+    font-size: 15pt;
+}
+#createRequest .forms input{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    background-color: #dc878c;
+    cursor: pointer;
+    border: 2px outset black;
+}
+#createRequest .forms input:hover{
+    background-color: #848484;
+}
+/*О нас*/
+.about-main{
+    width:100%;
+}
+.about-main div{
+    float:left;
+    width:50%;
+}
+.about-photo{
+    text-align:center;
+}
+.about-photo img{
+    max-height:350px;
+}
+.about-teachers{
+    margin:auto;
+    margin-top: 30px;
+    text-align: center;
+}
+.about-teachers h1{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+.about-teachers-form{
+    width:400px;
+    float:left;
+    background-color: #dc878c;
+    padding: 20px;
+}
+.about-teachers-photo{
+    display: inline-block;
+    float: left;
+    width: 35%;
+    text-align: center;
+}
+.about-teachers-photo img{
+    display: inline-block;
+    max-width:350px;
+    max-height:350px;
+}
+.about-teachers-text{
+    width: 60%;
+    padding-top: 10px;
+    float: left;
+    font-size: 15pt;
+}
+.about-teachers-text b{
+font-size: 32px;
+display: inline-block;
+margin-bottom: 10px;
+}
+/*Преимущества*/
+.main-plus-div{
+    border: 7px solid #dc878c;
+}
+.plus-main{
+    width:920px;
+    margin:auto;
+    text-align:center;
+    min-height: 200px;
+    margin-top: -10px;
+}
+
+.plus-main div{
+    display:inline-block;
+}
+.plus-form{
+    width:300px;
+    vertical-align: top;
+    padding-bottom: 20px;
+}
+.plus-form:last-child{
+    float: right;
+}
+.plus-photo img{
+    max-width:100px;
+    max-height:100px;
+}
+.plus-text{
+    padding-top: 10px;
+}
+/*Обучение*/
+.main-study{
+    min-height: 600px;
+}
+.study-menu{
+    margin-top: 50px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+.study-menu .slick-track{
+    width:1100px;
+    height:auto !important; 
+}
+.study-menu .slick-slide {
+    margin:10px;
+    width:314px;     
+}
+.study-slide{
+border: 1px solid black;
+width: 400px;
+height:630px;
+text-align: center;
+background-color:white;
+margin:10px;
+display: inline-flex;
+border: 5px outset #ffb4b4;
+}
+.study-slide2{
+    margin-left: -200px;
+    margin-right: -200px;
+    margin-top: -25px;
+    margin-bottom: -25px;
+    z-index: 1;
+    height:00px;
+}
+.study-slide3{
+}
+.study-slide .study-main-photo img{
+    max-width: 300px;
+}
+.study-slide .study-photo {
+    display: none; 
+    max-width: 400px;
+    float:left;
+}
+.study-slide .study-photo img{
+width:inherit;   
+max-width: 0px;
+max-height: 340px;
+}
+.study-slide .study-name{
+display: none;
+font-size: 35pt;
+padding: 20px 5px;
+}
+.study-slide .study-text{
+padding: 10px 5px;
+height: 150px;
+}
+.study-slide .study-time{
+padding: 10px 5px;
+}
+.study-slide .study-price{
+padding: 10px 5px;
+font-size: 17pt;
+}
+.study-slide .study-button2{
+padding: 10px 5px;
+border: 2px solid #151515;
+background-color: #ffdbdb;
+margin: 0px 50px;
+}
+.study-menu-full{
+    width:100%;
+    display: none;
+}
+.program-content{
+    text-align: left;
+}
+.program-curs{
+    display: none;
+    float:left;
+}
+.program-curs .program-header{
+    border: 2px solid #cacaca;
+    text-align: left;
+    padding-left: 50px;
+    cursor: pointer;
+}
+.program-plus{
+    display: none;
+    text-align: left;
+    padding-left: 20px;
+}
+/*Расписание*/
+.study-schedule {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.study-schedule table {
+    margin: auto;
+    min-width: 60%;
+    background-color:white;
+    padding: 10px 5px;
+}
+.study-schedule table td{
+    border:2px solid #dc878c;
+    padding:5px;
+}
+.study-schedule table td table{
+    min-width:auto;
+    padding:0px;
+    width:100%;
+    border-spacing: 0px 5px;
+}
+.head-table{
+    background-color: #eab8bb;
+    color:white;
+    font-weight: bold;    
+}
+.study-schedule table tr:nth-child(2n+3){
+    background-color: #ddd;
+}
+/*Галерея*/
+.galery .slick-slide img{
+    display:inline-block;
+}
+.galery .galery-slide{
+    text-align: center;
+}
+/*Ученики*/
+.student{
+    width: 98%;
+    margin-top:132px;
+    display: inline-block;
+    border: 7px solid #dc878c;
+}
+.student .student-header{
+    height: 50px;
+    padding: 20px 50px;
+    font-size: 25pt;
+}
+.student .student-header .student-name{
+    float:left;
+    font-weight: bold;
+}
+.student .student-header .student-inst{
+    float:right;
+}
+.student .student-main{
+    padding: 0px 50px 20px 50px;
+}
+.student .student-main .student-work{
+    display: inline-block;
+    border: 7px solid #dc878c;
+    width: 350px;
+    height: 350px;
+}
+.student .student-main .student-work img{
+    display: none;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    position: absolute;
+}
+.student .student-main .student-work img:first-child{
+    display: block;
+}
+.student .student-main .student-description{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 70px;
+    margin-top: 30px;
+    width: 400px;
+}
+.student .student-main .student-description .student-curs{
+    text-align: center;
+    font-size: 25pt;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+.student .student-main .student-description .student-text{
+    font-size: 19pt;
+    color:#c2334b;
+    font-weight: bold;
+    text-align: center;    
+}
+.student-photo{
+    position: absolute;
+    margin-top: -625px;
+    margin-left: 400px;
+}
+.student-photo img{
+    max-height: 250px;
+    border-radius: 132px;
+    border:7px solid #dc878c;
+    
+}
+
+/*Отзывы*/
+.main-comment{
+    width: 750px;
+    margin: auto;
+}
+.comment-photo {
+    text-align: center;
+}
+.comment-photo img{
+    max-height: 400px;
+    display: inline-block;
+}
+/*Footer*/
+.footer-name{
+    float:left;
+}
+.footer-contact{
+    float:right;
+    padding-top: 20px;
+}
+.footer-header:after, .about-main:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.footer-contact div{
+    padding-right: 15px;
+    font-size:20pt;
+    text-align: right;
+}
+.footer-name span{
+    font-size: 22pt;
+    font-weight: bold;
+}
+.footer-contact a{
+    color:white;
+}
+
+
+
+/*Slider*/
+.slick-prev{
+    background-image: url('/images/left.png');
+    left:-40px;
+    width: 29px;
+    height: 47px;
+    background-repeat: no-repeat;
+}
+.slick-prev:hover{
+    background-image: url('/images/left.png');
+}
+.slick-prev:focus{
+    background-image: url('/images/left.png');
+}
+.slick-prev::before{
+    content:'';
+}
+
+.slick-next{
+    background-image: url('/images/right.png');
+    right:-40px;
+    width: 29px;
+    height: 47px;
+    background-repeat: no-repeat;
+}
+.slick-next:hover{
+    background-image: url('/images/right.png');
+}
+.slick-next:focus{
+    background-image: url('/images/right.png');
+}
+.slick-next::before{
+    content:'';
+}
+
+
+/*Вход на сайт*/
+.onmain{
+}
+.onmain div{
+    display: inline-block;
+}
+.onmain a{
+    font-size:16pt;
+    color:white;
+    text-decoration: underline;
+    line-height: 45px;
+}
+.onmain .onmain-go{
+    float: left;
+    margin-top: 140px;
+}
+.onmain .logout{
+    float: right;
+}
+.login{
+    text-align:center;
+    margin-top: 45px;
+    padding-top: 10px;
+}
+.login .panel-heading{
+    font-size:16pt;
+    font-weight: bold;
+}
+.login .panel-body{
+    margin-top: 10px;
+}
+.login .form-group{
+    margin-bottom: 10px;
+}
+.login .form-group button{
+    border: 1px solid black;
+    padding: 5px;
+    width: 70px;
+    font-weight: bold;
+}
+
+.login .form-group a{
+    text-decoration: underline;
+}
+
+/*Восстановление пароля*/
+
+.reset{
+    text-align:center;
+    margin-top: 45px;
+    padding-top: 10px;
+}
+.reset .panel-heading{
+    font-size:16pt;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.reset .form-group{
+    margin-bottom: 10px;
+}
+.reset .form-group input{
+    width:200px;
+}
+.reset .form-group button{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/*Регистрация*/
+.register{
+    text-align:center;
+    margin-top: 45px;
+    padding-top: 10px;
+}
+.register .panel-heading{
+    font-size:16pt;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.register .form-group{
+    margin-bottom: 10px;
+}
+.register .form-group input{
+    width:200px;
+}
+.register .form-group button{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+@media screen and (max-width: 500px) 
+{
+    body{
+        width: 100%; 
+        font-size: 14pt;
+    }
+    .header-area {
+        width: 100%;
+        padding: 5px 10px;
+        height:200px;
+    }
+    .header-top-block{
+        height: 100px;
+    }
+    .adress, .main-top-contact{
+        width:35%;
+    }
+    .logo{
+        width:30%;
+        text-align: center;
+    }
+    .main-top-contact{
+        text-align: center;
+    }
+    .logo img{
+        width:100%;
+    }
+    .main-top-adress{
+        padding:0px;
+    }
+    .main-top-contact span{
+        display: none;
+    }
+    .main-top-contact .fa-phone::before{
+        content:"";
+    }
+    .main-top-vk, .main-top-in{
+        display: inline-block;
+        font-size: 30px;
+        padding-right: 10px;
+    }
+    .main-top-phone{
+        padding-right: 10px;
+    }
+    .header-top{
+        height: auto;
+        margin: 10px 5px;
+        height: 100px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    .header-menu{
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+    .header-menu a{
+        border: dashed #fff;
+        border-width: 0px 1px;
+    }
+    
+    .header-menu li{
+        font-size: 14pt;
+        padding: 0px 2px;
+    }
+    .white{
+        padding: 0px;
+        margin:0px;
+    }
+    .pink{
+        padding: 5px;
+        margin:0px;
+    }
+    .pink2{
+        padding: 5px;
+        margin:0px;
+    }
+    
+    .main-top{
+        margin-top: 200px;
+        min-height: 0px;
+    }
+    .main-top-content{
+        padding:0px;
+        padding-top: 10px;
+        width:100%;
+    }
+    .main-top-content h1{
+        font-size: 15pt;
+    }
+    .main-top-content span{
+        font-size: 15pt;
+    }
+    #createRequest{
+        padding-top: 20px;
+    }
+    #createRequest .forms{
+        margin-bottom: 5px;
+    }
+    .main-head2{
+        display: none;
+    }
+    .study-menu{
+        margin:auto;
+    }
+    .about-main{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .about-main div{
+        width:100%;
+        text-align: justify;
+    }
+    .about-photo img{
+        max-height: auto;
+        width: 100%;
+    }
+    .about-teachers{
+        margin-top: 0px;
+    }
+    .slick-prev{
+        left: 5px;
+        z-index: 200;
+        opacity: 50%;
+    }
+    .slick-next{
+        right: 5px;
+        z-index: 200;
+        opacity: 50%;
+    }
+    .about-teachers .slick-track{
+        background-color: #dc878c;
+    }
+    .about-teachers-photo{
+        width: 100%;
+    }
+    .about-teachers-text{
+        width: 100%;
+    }
+    .about-teachers-form{
+        padding: 5px;
+    }
+    .plus-main {
+        width:auto;
+    }
+    .plus-form:last-child{
+        float:none;
+    }
+
+
+    .main-comment{
+        width: 100%;
+    }
+    .study-menu .slick-slide{
+        margin:0px;
+    }
+    .study-slide{
+        border:none;
+        margin:0px;
+    }
+    .study-slide img{
+        display: inline-block;
+    }
+    .student-container{
+        width: 100%;
+        flex-direction: column-reverse;
+        display: flex !important;
+        align-items: center;
+    }
+    .student{
+        margin-top:0px;
+    }
+    .student-photo{
+        position: relative;
+        top: 30px;
+        margin-top: -30px;
+        margin-left: 0px;
+    }
+    .student .student-main{
+        padding: 0px 0px 20px 0px;
+        text-align: center;
+    }
+    .student .student-main .student-description{
+        margin-left:0px;
+        width:auto;
+    }
+}
+
+
+@media screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) 
+{
+    body{
+        width: 100%; 
+    }
+    .header-area {
+        width: 100%;
+        padding: 5px 10px;
+        height:200px;
+    }
+    .header-top-block{
+        height: 100px;
+    }
+    .adress, .main-top-contact{
+        width:35%;
+    }
+    .logo{
+        width:30%;
+        text-align: center;
+    }
+    .main-top-contact{
+        text-align: center;
+    }
+    .logo img{
+        width:100%;
+    }
+    .main-top-adress{
+        padding:0px;
+    }
+    .main-top-contact span{
+        display: none;
+    }
+    .main-top-contact .fa-phone::before{
+        content:"";
+    }
+    .main-top-vk, .main-top-in{
+        display: inline-block;
+        font-size: 30px;
+        padding-right: 10px;
+    }
+    .main-top-phone{
+        padding-right: 10px;
+    }
+    .header-top{
+        height: auto;
+        margin: 10px 5px;
+        height: 100px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    .header-menu{
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+    .header-menu a{
+        border: dashed #fff;
+        border-width: 0px 1px;
+    }    
+    .header-menu li{
+        font-size: 14pt;
+        padding: 0px 2px;
+    }
+    .white{
+        padding: 0px;
+        margin:0px;
+    }
+    .pink{
+        padding: 5px;
+        margin:0px;
+    }
+    
+    .main-top{
+        margin-top: 200px;
+        min-height: 0px;
+    }
+    .main-top-content{
+        padding:0px;
+        padding-top: 10px;
+        width:100%;
+    }
+    .main-top-content h1{
+        font-size: 15pt;
+    }
+    .main-top-content span{
+        font-size: 15pt;
+    }
+    #createRequest{
+        padding-top: 20px;
+    }
+    #createRequest .forms{
+        margin-bottom: 5px;
+    }
+    .main-head2{
+        display: none;
+    }
+    .study-menu{
+        margin:auto;
+    }
+    .about-main{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .about-main div{
+        width:100%;
+        text-align: justify;
+    }
+    .about-photo img{
+        max-height: auto;
+        width: 100%;
+    }
+    .about-teachers{
+        margin-top: 0px;
+    }
+    .slick-prev{
+        left: 5px;
+        z-index: 200;
+        opacity: 50%;
+    }
+    .slick-next{
+        right: 5px;
+        z-index: 200;
+        opacity: 50%;
+    }
+    .about-teachers .slick-track{
+        background-color: #dc878c;
+    }
+    .about-teachers-photo{
+        width: 100%;
+    }
+    .about-teachers-text{
+        width: 100%;
+    }
+    .about-teachers-form{
+        padding: 5px;
+    }
+    .plus-main {
+        width:auto;
+    }
+    .plus-form:last-child{
+        float:none;
+    }
+
+
+    .main-comment{
+        width: 100%;
+    }
+    .study-menu .slick-slide{
+        margin:0px;
+    }
+    .study-slide{
+        border:none;
+        margin:0px;
+    }
+    .study-slide img{
+        display: inline-block;
+    }
+    .student-container{
+        width: 100%;
+        flex-direction: column-reverse;
+        display: flex !important;
+        align-items: center;
+    }
+    .student{
+        margin-top:0px;
+    }
+    .student-photo{
+        position: relative;
+        top: 30px;
+        margin-top: -30px;
+        margin-left: 0px;
+    }
+    .student .student-main{
+        padding: 0px 0px 20px 0px;
+        text-align: center;
+    }
+    .student .student-main .student-description{
+        margin-left:0px;
+        width:auto;
+    }
+}
